@@ -10,7 +10,7 @@ $PackageArgs = @{
     packageName    = $packageName
     unzipLocation  = $installDir
     url            = "https://ftp.gnu.org/pub/gnu/emacs/windows/emacs-$($majorVersion)/$($emacsNameVersion)-bin-i686-mingw32.zip"
-    checksum       = 'd8c1486304462a368911acc4628ba5433d5d6af6a25511504f324a3cd405131b'
+    checksum       = 'b7bd6668fd17e5809f83567b4d9e87217a31dfcc7ef12c27a935823b6991ffd9'
     checksumType   = 'sha256'
 }
 

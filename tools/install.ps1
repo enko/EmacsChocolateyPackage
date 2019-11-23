@@ -1,5 +1,5 @@
 Import-Module "$(Split-Path -parent $MyInvocation.MyCommand.Definition)/install.psm1"
 
-Install-ChocolateyZipPackage @FullPackageArgs
+Install-ChocolateyZipPackage @PackageArgs
 
 New-ShimHintFiles

@@ -3,7 +3,7 @@
   <metadata>
     <id>emacs</id>
     <title>Emacs</title>
-    <version>26.1.0.20190416</version>
+    <version>24.5.0.20191123</version>
     <packageSourceUrl>https://github.com/enko/EmacsChocolateyPackage</packageSourceUrl>
     <authors>The GNU Project</authors>
     <owners>Tim Schumacher</owners>
@@ -13,7 +13,7 @@
     <projectUrl>http://www.gnu.org/software/emacs/</projectUrl>
     <projectSourceUrl>https://github.com/emacs-mirror/emacs</projectSourceUrl>
     <tags>emacs editor</tags>
-    <copyright>Copyright (C) 2018 Free Software Foundation, Inc.</copyright>
+    <copyright>Copyright (C) 2015 Free Software Foundation, Inc.</copyright>
     <licenseUrl>http://www.gnu.org/software/emacs/manual/html_node/emacs/Distrib.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>http://cvs.savannah.gnu.org/viewvc/*checkout*/emacs/emacs/etc/images/icons/hicolor/48x48/apps/emacs.png</iconUrl>

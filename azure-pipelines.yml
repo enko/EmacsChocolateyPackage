@@ -8,16 +8,8 @@ jobs:
           # Create Chocolately Package
           Choco Pack .\emacs.nuspec
           # Try to install the package
-          Choco Install emacs -source .\ -forcex86 -y
-          Choco Uninstall emacs -y
           Choco Install emacs -source .\ -y
-
-          # Create Emacs full Chocolately Package
-          Choco Pack .\emacs-full.nuspec
-          # Try to install the package
-          Choco Install emacs-full -source .\ -forcex86 -y
-          Choco Uninstall emacs-full -y
-          Choco Install emacs-full -source .\ -y
+          Choco Uninstall emacs -y
   - job: deploy
     displayName: Deploy the emacs package to chocolatey.com
     pool:

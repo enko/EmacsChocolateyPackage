@@ -6,7 +6,7 @@ $minorVersion = '5'
 $emacsNameVersion = "$($packageName)-$($majorVersion).$($minorVersion)"
 $installDir = $(Split-Path -parent $MyInvocation.MyCommand.Definition) + '/' + $packageName
 
-$FullPackageArgs = @{
+$PackageArgs = @{
     packageName    = $packageName
     unzipLocation  = $installDir
     url            = "https://ftp.gnu.org/pub/gnu/emacs/windows/emacs-$($majorVersion)/$($emacsNameVersion)-bin-i686-mingw32.zip"

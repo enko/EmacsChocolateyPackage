@@ -15,7 +15,7 @@ jobs:
     pool:
       vmImage: windows-2019
     dependsOn: test
-    condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))
+    condition: and(succeeded(), startWith(variables['Build.SourceBranch'], 'refs/heads/stable/'))
     steps:
       - powershell: |
           Choco apikey --key $chocolateyApiKey --source https://push.chocolatey.org/
@@ -23,7 +23,3 @@ jobs:
           Choco Pack .\emacs.nuspec
           $version = ([xml](Get-Content .\emacs.nuspec)).package.metadata.version
           Choco push ".\Emacs.$version.nupkg" --source https://push.chocolatey.org/
-
-          Choco Pack .\emacs-full.nuspec
-          $version = ([xml](Get-Content .\emacs-full.nuspec)).package.metadata.version
-          Choco push ".\emacs-full.$version.nupkg" --source https://push.chocolatey.org/

@@ -15,7 +15,7 @@ jobs:
     pool:
       vmImage: windows-2019
     dependsOn: test
-    condition: and(succeeded(), startWith(variables['Build.SourceBranch'], 'refs/heads/stable/'))
+    condition: and(succeeded(), startsWith(variables['Build.SourceBranch'], 'refs/heads/stable/'))
     steps:
       - powershell: |
           Choco apikey --key $chocolateyApiKey --source https://push.chocolatey.org/

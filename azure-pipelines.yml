@@ -18,7 +18,7 @@ jobs:
     condition: and(succeeded(), startsWith(variables['Build.SourceBranch'], 'refs/heads/stable/'))
     steps:
       - powershell: |
-          Choco apikey --key $env:CHOCOLATEYAPIKEY https://push.chocolatey.org/
+          Choco apikey --key $env:CHOCOLATEYAPIKEY --source https://push.chocolatey.org/
 
           Choco Pack .\emacs.nuspec
           $version = ([xml](Get-Content .\emacs.nuspec)).package.metadata.version

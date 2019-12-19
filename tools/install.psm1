@@ -11,9 +11,9 @@ $FullPackageArgs = @{
     unzipLocation  = $installDir
     url            = "https://ftp.gnu.org/pub/gnu/emacs/windows/emacs-$($majorVersion)/$($emacsNameVersion)-i686.zip"
     url64bit       = "https://ftp.gnu.org/pub/gnu/emacs/windows/emacs-$($majorVersion)/$($emacsNameVersion)-x86_64.zip"
-    checksum       = 'd8c1486304462a368911acc4628ba5433d5d6af6a25511504f324a3cd405131b'
+    checksum       = '77df3aa8edfcc248caf0ef8726460d08ad3feb8e21295183222981feb722be34'
     checksumType   = 'sha256'
-    checksum64     = '995a9da608c8dca75c385769c1c7bf212ac39713c0d14e9af2e718363b5e8264'
+    checksum64     = '4cf4c41c77d3893a62ec8b88031680f63574b15b8658e614bcfc20ce0ef1ef1e'
     checksumType64 = 'sha256'
 }
 
@@ -22,9 +22,9 @@ $NoDepsPackageArgs = @{
     unzipLocation  = $installDir
     url            = "https://ftp.gnu.org/pub/gnu/emacs/windows/emacs-$($majorVersion)/$($emacsNameVersion)-i686-no-deps.zip"
     url64bit       = "https://ftp.gnu.org/pub/gnu/emacs/windows/emacs-$($majorVersion)/$($emacsNameVersion)-x86_64-no-deps.zip"
-    checksum       = '8aa09a1cc7714045fc92f3f21b738e4356481670c7a0546c7edccf92b41df0b3'
+    checksum       = '88d24adf0fa5e8bb72f3f7f15cb8b7f3f3bee541a0b194a6c3b9db172b8dbaba'
     checksumType   = 'sha256'
-    checksum64     = 'e73febe3f3ce5918c871fa4195e2561599c425635f2100ddd1327eeb052a0d7d'
+    checksum64     = '12d4d80a9c37baeacf8d6d808cde3173d6ca570ca684e69f0adf6ca66fa88bf6'
     checksumType64 = 'sha256'
 }
 

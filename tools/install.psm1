@@ -35,9 +35,9 @@ $DepsPackageArgs = @{
   unzipLocation  = $installDir
   url            = "https://alpha.gnu.org/gnu/emacs/pretest/windows/emacs-$($majorVersion)/$($emacsDepsVersion)-i686-deps.zip"
   url64bit       = "https://alpha.gnu.org/gnu/emacs/pretest/windows/emacs-$($majorVersion)/$($emacsDepsVersion)-x86_64-deps.zip"
-  checksum       = '4ff9057d4407f2d1149f158a2920acd09c31eff12a09ba25dc1776a3978f41ad'
+  checksum       = '1F28BEA4A14E86817B730C7ED71905407436B98B5ABCC1BDFE32513B74311C7C'
   checksumType   = 'sha256'
-  checksum64     = '3501e0c7f31cbf98ef7ac5cbbc8bae04ef4a72f52b00898965a8d702c4a5fae7'
+  checksum64     = '9597cccaf3eb8a26eb5504327a042354d11760b7aae5e83c75ce793491d2de1d'
   checksumType64 = 'sha256'
 }
 

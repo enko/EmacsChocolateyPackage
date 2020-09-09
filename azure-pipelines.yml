@@ -13,13 +13,6 @@ jobs:
           Choco Install emacs -source .\ -forcex86 -y
           Choco Uninstall emacs -y
           Choco Install emacs -source .\ -y
-
-          # Create Emacs full Chocolately Package
-          Choco Pack .\emacs-full.nuspec
-          # Try to install the package
-          Choco Install emacs-full -source .\ -forcex86 -y
-          Choco Uninstall emacs-full -y
-          Choco Install emacs-full -source .\ -y
   - job: deploy
     displayName: Deploy the emacs package to chocolatey.com
     pool:
@@ -33,7 +26,3 @@ jobs:
           Choco Pack .\emacs.nuspec
           $version = ([xml](Get-Content .\emacs.nuspec)).package.metadata.version
           Choco push ".\Emacs.$version.nupkg" --source https://push.chocolatey.org/
-
-          Choco Pack .\emacs-full.nuspec
-          $version = ([xml](Get-Content .\emacs-full.nuspec)).package.metadata.version
-          Choco push ".\emacs-full.$version.nupkg" --source https://push.chocolatey.org/

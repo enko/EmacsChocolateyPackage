@@ -1,7 +1,7 @@
 $packageName = 'emacs'
 
 $majorVersion = '27'
-$minorVersion = '1'
+$minorVersion = '2'
 
 $emacsNameVersion = "$($packageName)-$($majorVersion).$($minorVersion)"
 $installDir = $(Split-Path -parent $MyInvocation.MyCommand.Definition) + '/' + $packageName

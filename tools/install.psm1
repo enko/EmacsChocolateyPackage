@@ -12,9 +12,9 @@ $FullPackageArgs = @{
     unzipLocation  = $installDir
     url            = "$($baseUrl)/emacs-$($majorVersion)/$($emacsNameVersion)-i686.zip"
     url64bit       = "$($baseUrl)/emacs-$($majorVersion)/$($emacsNameVersion)-x86_64.zip"
-    checksum       = 'a52a1126825f3bf02b727f727874bfccb82ffaab4e914defbeaec28eb3ed6f1e'
+    checksum       = '626792EA6C4C5347E1F17960072440AF1CB05CB6767389FC8195A744A0B428CA'
     checksumType   = 'sha256'
-    checksum64     = '65f1b01bcd14e59d7da0ebad3979c5df9f9bd8d24b2ff2e32a5af3aacb226229'
+    checksum64     = '5396AA4239C9AC2F65A6B084CCF588D01BDD6DDB701419B7FDA5B97B45846093'
     checksumType64 = 'sha256'
 }
 
